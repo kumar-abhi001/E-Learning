@@ -1,3 +1,5 @@
+import logo from '../assets/logo.png';
+import toggleMenu from '../assets/toggle-menu.png'
 const Navbar = () => {
     return (
       <div className="container-fluid flex flex-row border-2 p-2">
@@ -6,10 +8,10 @@ const Navbar = () => {
           id="navbarToggler"
           className="d-lg-none ps-0 btn btn-link"
         >
-          <span className="navbar-toggler-icon">Icon</span>
+          <span className="navbar-toggler-icon"><img src={toggleMenu} alt=""  className='h-7 mr-5'/></span>
         </button>
         <a className="me-auto" id="headerLogo">
-          Logo
+          <img src={logo} alt="logo" className='h-14' />
         </a>
         <div className="d-flex align-items-center flex justify-between mr-11">
           <div className="relative">
@@ -39,7 +41,7 @@ const Navbar = () => {
             />
             <button
               type="submit"
-              class="text-white absolute end-1 bottom-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white absolute end-1 bottom-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Search
             </button>
@@ -48,16 +50,16 @@ const Navbar = () => {
             <button
               type="button"
               id="signup"
-                className="bg-blue-700 hover:bg-blue-800
+              className="bg-blue-700 hover:bg-blue-800
                text-white font-bold py-3 px-4 rounded-3xl ml-3 mr-3"
             >
               Signup
             </button>
-                    
+
             <button
               type="button"
               id="login"
-                className="bg-blue-700 hover:bg-blue-800
+              className="bg-blue-700 hover:bg-blue-800
                text-white font-bold py-3 px-4 rounded-3xl"
             >
               Login
