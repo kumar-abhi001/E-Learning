@@ -3,15 +3,15 @@ import toggleMenu from '../assets/toggle-menu.png'
 const Navbar = () => {
     return (
       <div className="container-fluid flex flex-row border-2 p-2">
-        <button
+        {/* <button
           type="button"
           id="navbarToggler"
           className="d-lg-none ps-0 btn btn-link"
         >
           <span className="navbar-toggler-icon"><img src={toggleMenu} alt=""  className='h-7 mr-5'/></span>
-        </button>
+        </button> */}
         <a className="me-auto" id="headerLogo">
-          <img src={logo} alt="logo" className='h-14' />
+          <img src={logo} alt="logo" className='h-14 ml-4' />
         </a>
         <div className="d-flex align-items-center flex justify-between mr-11">
           <div className="relative">
