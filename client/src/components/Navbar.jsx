@@ -2,14 +2,7 @@ import logo from '../assets/logo.png';
 import toggleMenu from '../assets/toggle-menu.png'
 const Navbar = () => {
     return (
-      <div className="container-fluid flex flex-row border-2 p-2">
-        {/* <button
-          type="button"
-          id="navbarToggler"
-          className="d-lg-none ps-0 btn btn-link"
-        >
-          <span className="navbar-toggler-icon"><img src={toggleMenu} alt=""  className='h-7 mr-5'/></span>
-        </button> */}
+      <div className="flex flex-row border-1 p-2 shadow-md sticky top-0 z-10 w-full bg-white">
         <a className="me-auto" id="headerLogo">
           <img src={logo} alt="logo" className='h-14 ml-4' />
         </a>
@@ -35,7 +28,7 @@ const Navbar = () => {
             <input
               type="search"
               id="default-search"
-              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="block w-80 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-700 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search"
               required
             />
