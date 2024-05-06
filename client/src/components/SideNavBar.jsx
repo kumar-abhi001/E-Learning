@@ -2,7 +2,7 @@ import homeicon from "../assets/home.icon.png";
 import learningicon from "../assets/learning.icon.png";
 const SideNavBar = ({isLogin=false}) => {
   return (
-    <div className="fixed h-full overflow-x-hidden bg-blue-50 w-1/5 pl-4 pt-5 pl-10">
+    <div className="fixed h-full overflow-x-hidden bg-[#e8f1fd] w-1/5 pl-4 pt-5 pl-10">
       <div className="text-nowrap p-4 nav flex-column ">
         <p className="py-3 fw-bold font-xs text-slate-500 nav-item">
           MAIN MENU

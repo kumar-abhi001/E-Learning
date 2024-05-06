@@ -1,10 +1,16 @@
 import logo from '../assets/logo.png';
-import toggleMenu from '../assets/toggle-menu.png'
+import { useState } from 'react';
+import { Signup } from './Signup';
 const Navbar = () => {
+  const [isSignUp, setIsSignUp] = useState(false);
+  const closeSignUp = () => {
+    setIsSignUp(false);
+  }
+
     return (
       <div className="flex flex-row border-1 p-2 shadow-md sticky top-0 z-10 w-full bg-white">
         <a className="me-auto" id="headerLogo">
-          <img src={logo} alt="logo" className='h-14 ml-4' />
+          <img src={logo} alt="logo" className="h-14 ml-4" />
         </a>
         <div className="d-flex align-items-center flex justify-between mr-11">
           <div className="relative">
@@ -45,9 +51,13 @@ const Navbar = () => {
               id="signup"
               className="bg-blue-700 hover:bg-blue-800
                text-white font-bold py-3 px-4 rounded-3xl ml-3 mr-3"
+              onClick={() => {
+                setIsSignUp(true);
+              }}
             >
               Signup
             </button>
+            {isSignUp && <Signup closeSignUp={closeSignUp} />}
 
             <button
               type="button"
