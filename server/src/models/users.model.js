@@ -33,7 +33,8 @@ const userSchema = mongoose.Schema(
         accessToken: {
             type: String,
         }
-    }
+    }, 
+    {timestamps: true}
 )
 
 //adding middleware

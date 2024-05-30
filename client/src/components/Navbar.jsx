@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
       <div className="flex flex-row border-1 p-2 shadow-md sticky top-0 z-10 w-full bg-white">
-        <a className="me-auto" id="headerLogo">
+        <a className="me-auto" id="headerLogo" href='/'>
           <img src={logo} alt="logo" className="h-14 ml-4" />
         </a>
         <div className="d-flex align-items-center flex justify-between mr-11">
